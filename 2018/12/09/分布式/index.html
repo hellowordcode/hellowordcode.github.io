@@ -29,34 +29,34 @@
 <meta property="og:site_name" content="HelloCode">
 <meta property="og:description" content="一、分布式锁在单机场景下，可以使用语言的内置锁来实现进程同步。但是在分布式场景下，需要同步的进程可能位于不同的节点上，那么就需要使用分布式锁。 阻塞锁通常使用互斥量来实现：  互斥量为 0 表示有其它进程在使用锁，此时处于锁定状态； 互斥量为 1 表示未锁定状态。  1 和 0 可以用一个整型值表示，也可以用某个数据是否存在表示。 数据库的唯一索引获得锁时向表中插入一条记录，释放锁时删除这条记录。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//31d99967-1171-448e-8531-bccf5c14cffe.jpg">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//e3bf5de4-ab1e-4a9b-896d-4b0ad7e9220a.jpg">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//04f41228-375d-4b7d-bfef-738c5a7c8f07.jpg">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//2991c772-fb1c-4051-a9c7-932b68e76bd7.jpg">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//f1109d04-3c67-48a3-9963-2c475f94e175.jpg">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//0b587744-c0a8-46f2-8d72-e8f070d67b4b.jpg">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//bc603930-d74d-4499-a3e7-2d740fc07f33.png">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//b988877c-0f0a-4593-916d-de2081320628.jpg">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//1a9977e4-2f5c-49a6-aec9-f3027c9f46a7.png">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//fb44307f-8e98-4ff7-a918-31dacfa564b4.jpg">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//2bcc58ad-bf7f-485c-89b5-e7cafc211ce2.jpg">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//9b838aee-0996-44a5-9b0f-3d1e3e2f5100.png">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//bf667594-bb4b-4634-bf9b-0596a45415ba.jpg">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//111521118015898.gif">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//111521118445538.gif">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//111521118483039.gif">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//111521118640738.gif">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//111521119203347.gif">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//111521119368714.gif">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//7.gif">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//9.gif">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//10.gif">
-<meta property="og:image" content="http://hellowordcode.github.io/2018/12/09/pics//11.gif">
-<meta property="og:updated_time" content="2018-12-09T05:16:16.040Z">
+<meta property="og:image" content="https://jacquesh.info/pics/31d99967-1171-448e-8531-bccf5c14cffe.jpg">
+<meta property="og:image" content="https://jacquesh.info/pics/e3bf5de4-ab1e-4a9b-896d-4b0ad7e9220a.jpg">
+<meta property="og:image" content="https://jacquesh.info/pics/04f41228-375d-4b7d-bfef-738c5a7c8f07.jpg">
+<meta property="og:image" content="https://jacquesh.info/pics/2991c772-fb1c-4051-a9c7-932b68e76bd7.jpg">
+<meta property="og:image" content="https://jacquesh.info/pics/f1109d04-3c67-48a3-9963-2c475f94e175.jpg">
+<meta property="og:image" content="https://jacquesh.info/pics/0b587744-c0a8-46f2-8d72-e8f070d67b4b.jpg">
+<meta property="og:image" content="https://jacquesh.info/pics/bc603930-d74d-4499-a3e7-2d740fc07f33.png">
+<meta property="og:image" content="https://jacquesh.info/pics/b988877c-0f0a-4593-916d-de2081320628.jpg">
+<meta property="og:image" content="https://jacquesh.info/pics/1a9977e4-2f5c-49a6-aec9-f3027c9f46a7.png">
+<meta property="og:image" content="https://jacquesh.info/pics/fb44307f-8e98-4ff7-a918-31dacfa564b4.jpg">
+<meta property="og:image" content="https://jacquesh.info/pics/2bcc58ad-bf7f-485c-89b5-e7cafc211ce2.jpg">
+<meta property="og:image" content="https://jacquesh.info/pics/9b838aee-0996-44a5-9b0f-3d1e3e2f5100.png">
+<meta property="og:image" content="https://jacquesh.info/pics/bf667594-bb4b-4634-bf9b-0596a45415ba.jpg">
+<meta property="og:image" content="https://jacquesh.info/pics/111521118015898.gif">
+<meta property="og:image" content="https://jacquesh.info/pics/111521118445538.gif">
+<meta property="og:image" content="https://jacquesh.info/pics/111521118483039.gif">
+<meta property="og:image" content="https://jacquesh.info/pics/111521118640738.gif">
+<meta property="og:image" content="https://jacquesh.info/pics/111521119203347.gif">
+<meta property="og:image" content="https://jacquesh.info/pics/111521119368714.gif">
+<meta property="og:image" content="https://jacquesh.info/pics/7.gif">
+<meta property="og:image" content="https://jacquesh.info/pics/9.gif">
+<meta property="og:image" content="https://jacquesh.info/pics/10.gif">
+<meta property="og:image" content="https://jacquesh.info/pics/11.gif">
+<meta property="og:updated_time" content="2018-12-22T18:06:00.907Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分布式">
 <meta name="twitter:description" content="一、分布式锁在单机场景下，可以使用语言的内置锁来实现进程同步。但是在分布式场景下，需要同步的进程可能位于不同的节点上，那么就需要使用分布式锁。 阻塞锁通常使用互斥量来实现：  互斥量为 0 表示有其它进程在使用锁，此时处于锁定状态； 互斥量为 1 表示未锁定状态。  1 和 0 可以用一个整型值表示，也可以用某个数据是否存在表示。 数据库的唯一索引获得锁时向表中插入一条记录，释放锁时删除这条记录。">
-<meta name="twitter:image" content="http://hellowordcode.github.io/2018/12/09/pics//31d99967-1171-448e-8531-bccf5c14cffe.jpg">
+<meta name="twitter:image" content="https://jacquesh.info/pics/31d99967-1171-448e-8531-bccf5c14cffe.jpg">
     
         <link rel="alternate" type="application/atom+xml" title="HelloCode" href="/atom.xml">
     
@@ -256,7 +256,7 @@
 <li>如果锁获取失败，就到每个实例上释放锁。</li>
 </ul>
 <h2 id="Zookeeper-的有序节点"><a href="#Zookeeper-的有序节点" class="headerlink" title="Zookeeper 的有序节点"></a>Zookeeper 的有序节点</h2><h3 id="1-Zookeeper-抽象模型"><a href="#1-Zookeeper-抽象模型" class="headerlink" title="1. Zookeeper 抽象模型"></a>1. Zookeeper 抽象模型</h3><p>Zookeeper 提供了一种树形结构级的命名空间，/app1/p_1 节点的父节点为 /app1。</p>
-<p><div align="center"> <img src="../pics//31d99967-1171-448e-8531-bccf5c14cffe.jpg" width="400"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/31d99967-1171-448e-8531-bccf5c14cffe.jpg" width="400"> </div><br></p>
 <h3 id="2-节点类型"><a href="#2-节点类型" class="headerlink" title="2. 节点类型"></a>2. 节点类型</h3><ul>
 <li>永久节点：不会因为会话结束或者超时而消失；</li>
 <li>临时节点：如果会话结束或者超时就会消失；</li>
@@ -279,19 +279,19 @@
 <li>之后将本地消息表中的消息转发到 Kafka 等消息队列中，如果转发成功则将消息从本地消息表中删除，否则继续重新转发。</li>
 <li>在分布式事务操作的另一方从消息队列中读取一个消息，并执行消息中的操作。</li>
 </ol>
-<p><div align="center"> <img src="../pics//e3bf5de4-ab1e-4a9b-896d-4b0ad7e9220a.jpg"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/e3bf5de4-ab1e-4a9b-896d-4b0ad7e9220a.jpg"> </div><br></p>
 <h2 id="2PC"><a href="#2PC" class="headerlink" title="2PC"></a>2PC</h2><p>两阶段提交（Two-phase Commit，2PC），通过引入协调者（Coordinator）来协调参与者的行为，并最终决定这些参与者是否要真正执行事务。</p>
 <h3 id="1-运行过程"><a href="#1-运行过程" class="headerlink" title="1. 运行过程"></a>1. 运行过程</h3><h4 id="1-1-准备阶段"><a href="#1-1-准备阶段" class="headerlink" title="1.1 准备阶段"></a>1.1 准备阶段</h4><p>协调者询问参与者事务是否执行成功，参与者发回事务执行结果。</p>
-<p><div align="center"> <img src="../pics//04f41228-375d-4b7d-bfef-738c5a7c8f07.jpg"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/04f41228-375d-4b7d-bfef-738c5a7c8f07.jpg"> </div><br></p>
 <h4 id="1-2-提交阶段"><a href="#1-2-提交阶段" class="headerlink" title="1.2 提交阶段"></a>1.2 提交阶段</h4><p>如果事务在每个参与者上都执行成功，事务协调者发送通知让参与者提交事务；否则，协调者发送通知让参与者回滚事务。</p>
 <p>需要注意的是，在准备阶段，参与者执行了事务，但是还未提交。只有在提交阶段接收到协调者发来的通知后，才进行提交或者回滚。</p>
-<p><div align="center"> <img src="../pics//2991c772-fb1c-4051-a9c7-932b68e76bd7.jpg"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/2991c772-fb1c-4051-a9c7-932b68e76bd7.jpg"> </div><br></p>
 <h3 id="2-存在的问题"><a href="#2-存在的问题" class="headerlink" title="2. 存在的问题"></a>2. 存在的问题</h3><h4 id="2-1-同步阻塞"><a href="#2-1-同步阻塞" class="headerlink" title="2.1 同步阻塞"></a>2.1 同步阻塞</h4><p>所有事务参与者在等待其它参与者响应的时候都处于同步阻塞状态，无法进行其它操作。</p>
 <h4 id="2-2-单点问题"><a href="#2-2-单点问题" class="headerlink" title="2.2 单点问题"></a>2.2 单点问题</h4><p>协调者在 2PC 中起到非常大的作用，发生故障将会造成很大影响。特别是在阶段二发生故障，所有参与者会一直等待，无法完成其它操作。</p>
 <h4 id="2-3-数据不一致"><a href="#2-3-数据不一致" class="headerlink" title="2.3 数据不一致"></a>2.3 数据不一致</h4><p>在阶段二，如果协调者只发送了部分 Commit 消息，此时网络发生异常，那么只有部分参与者接收到 Commit 消息，也就是说只有部分参与者提交了事务，使得系统数据不一致。</p>
 <h4 id="2-4-太过保守"><a href="#2-4-太过保守" class="headerlink" title="2.4 太过保守"></a>2.4 太过保守</h4><p>任意一个节点失败就会导致整个事务失败，没有完善的容错机制。</p>
 <h1 id="三、CAP"><a href="#三、CAP" class="headerlink" title="三、CAP"></a>三、CAP</h1><p>分布式系统不可能同时满足一致性（C：Consistency）、可用性（A：Availability）和分区容忍性（P：Partition Tolerance），最多只能同时满足其中两项。</p>
-<p><div align="center"> <img src="../pics//f1109d04-3c67-48a3-9963-2c475f94e175.jpg"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/f1109d04-3c67-48a3-9963-2c475f94e175.jpg"> </div><br></p>
 <h2 id="一致性"><a href="#一致性" class="headerlink" title="一致性"></a>一致性</h2><p>一致性指的是多个数据副本是否能保持一致的特性，在一致性的条件下，系统在执行数据更新操作之后能够从一致性状态转移到另一个一致性状态。</p>
 <p>对系统的一个数据更新成功之后，如果所有用户都能够读取到最新的值，该系统就被认为具有强一致性。</p>
 <h2 id="可用性"><a href="#可用性" class="headerlink" title="可用性"></a>可用性</h2><p>可用性指分布式系统在面对各种异常时可以提供正常服务的能力，可以用系统可用时间占总时间的比值来衡量，4 个 9 的可用性表示系统 99.99% 的时间是可用的。</p>
@@ -304,10 +304,10 @@
 <li>为了保证一致性（CP），不能访问未同步完成的节点，也就失去了部分可用性；</li>
 <li>为了保证可用性（AP），允许读取所有节点的数据，但是数据可能不一致。</li>
 </ul>
-<p><div align="center"> <img src="../pics//0b587744-c0a8-46f2-8d72-e8f070d67b4b.jpg"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/0b587744-c0a8-46f2-8d72-e8f070d67b4b.jpg"> </div><br></p>
 <h1 id="四、BASE"><a href="#四、BASE" class="headerlink" title="四、BASE"></a>四、BASE</h1><p>BASE 是基本可用（Basically Available）、软状态（Soft State）和最终一致性（Eventually Consistent）三个短语的缩写。</p>
 <p>BASE 理论是对 CAP 中一致性和可用性权衡的结果，它的核心思想是：即使无法做到强一致性，但每个应用都可以根据自身业务特点，采用适当的方式来使系统达到最终一致性。</p>
-<p><div align="center"> <img src="../pics//bc603930-d74d-4499-a3e7-2d740fc07f33.png"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/bc603930-d74d-4499-a3e7-2d740fc07f33.png"> </div><br></p>
 <h2 id="基本可用"><a href="#基本可用" class="headerlink" title="基本可用"></a>基本可用</h2><p>指分布式系统在出现故障的时候，保证核心可用，允许损失部分可用性。</p>
 <p>例如，电商在做促销时，为了保证购物系统的稳定性，部分消费者可能会被引导到一个降级的页面。</p>
 <h2 id="软状态"><a href="#软状态" class="headerlink" title="软状态"></a>软状态</h2><p>指允许系统中的数据存在中间状态，并认为该中间状态不会影响系统整体可用性，即允许系统不同节点的数据副本之间进行同步的过程存在时延。</p>
@@ -321,22 +321,22 @@
 <li>接受者（Acceptor）：对每个提议进行投票；</li>
 <li>告知者（Learner）：被告知投票的结果，不参与投票过程。</li>
 </ul>
-<p><div align="center"> <img src="../pics//b988877c-0f0a-4593-916d-de2081320628.jpg"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/b988877c-0f0a-4593-916d-de2081320628.jpg"> </div><br></p>
 <h2 id="执行过程"><a href="#执行过程" class="headerlink" title="执行过程"></a>执行过程</h2><p>规定一个提议包含两个字段：[n, v]，其中 n 为序号（具有唯一性），v 为提议值。</p>
 <h3 id="1-Prepare-阶段"><a href="#1-Prepare-阶段" class="headerlink" title="1. Prepare 阶段"></a>1. Prepare 阶段</h3><p>下图演示了两个 Proposer 和三个 Acceptor 的系统中运行该算法的初始过程，每个 Proposer 都会向所有 Acceptor 发送 Prepare 请求。</p>
-<p><div align="center"> <img src="../pics//1a9977e4-2f5c-49a6-aec9-f3027c9f46a7.png"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/1a9977e4-2f5c-49a6-aec9-f3027c9f46a7.png"> </div><br></p>
 <p>当 Acceptor 接收到一个 Prepare 请求，包含的提议为 [n1, v1]，并且之前还未接收过 Prepare 请求，那么发送一个 Prepare 响应，设置当前接收到的提议为 [n1, v1]，并且保证以后不会再接受序号小于 n1 的提议。</p>
 <p>如下图，Acceptor X 在收到 [n=2, v=8] 的 Prepare 请求时，由于之前没有接收过提议，因此就发送一个 [no previous] 的 Prepare 响应，设置当前接收到的提议为 [n=2, v=8]，并且保证以后不会再接受序号小于 2 的提议。其它的 Acceptor 类似。</p>
-<p><div align="center"> <img src="../pics//fb44307f-8e98-4ff7-a918-31dacfa564b4.jpg"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/fb44307f-8e98-4ff7-a918-31dacfa564b4.jpg"> </div><br></p>
 <p>如果 Acceptor 接收到一个 Prepare 请求，包含的提议为 [n2, v2]，并且之前已经接收过提议 [n1, v1]。如果 n1 &gt; n2，那么就丢弃该提议请求；否则，发送 Prepare 响应，该 Prepare 响应包含之前已经接收过的提议 [n1, v1]，设置当前接收到的提议为 [n2, v2]，并且保证以后不会再接受序号小于 n2 的提议。</p>
 <p>如下图，Acceptor Z 收到 Proposer A 发来的 [n=2, v=8] 的 Prepare 请求，由于之前已经接收过 [n=4, v=5] 的提议，并且 n &gt; 2，因此就抛弃该提议请求；Acceptor X 收到 Proposer B 发来的 [n=4, v=5] 的 Prepare 请求，因为之前接收到的提议为 [n=2, v=8]，并且 2 &lt;= 4，因此就发送 [n=2, v=8] 的 Prepare 响应，设置当前接收到的提议为 [n=4, v=5]，并且保证以后不会再接受序号小于 4 的提议。Acceptor Y 类似。</p>
-<p><div align="center"> <img src="../pics//2bcc58ad-bf7f-485c-89b5-e7cafc211ce2.jpg"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/2bcc58ad-bf7f-485c-89b5-e7cafc211ce2.jpg"> </div><br></p>
 <h3 id="2-Accept-阶段"><a href="#2-Accept-阶段" class="headerlink" title="2. Accept 阶段"></a>2. Accept 阶段</h3><p>当一个 Proposer 接收到超过一半 Acceptor 的 Prepare 响应时，就可以发送 Accept 请求。</p>
 <p>Proposer A 接收到两个 Prepare 响应之后，就发送 [n=2, v=8] Accept 请求。该 Accept 请求会被所有 Acceptor 丢弃，因为此时所有 Acceptor 都保证不接受序号小于 4 的提议。</p>
 <p>Proposer B 过后也收到了两个 Prepare 响应，因此也开始发送 Accept 请求。需要注意的是，Accept 请求的 v 需要取它收到的最大提议编号对应的 v 值，也就是 8。因此它发送 [n=4, v=8] 的 Accept 请求。</p>
-<p><div align="center"> <img src="../pics//9b838aee-0996-44a5-9b0f-3d1e3e2f5100.png"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/9b838aee-0996-44a5-9b0f-3d1e3e2f5100.png"> </div><br></p>
 <h3 id="3-Learn-阶段"><a href="#3-Learn-阶段" class="headerlink" title="3. Learn 阶段"></a>3. Learn 阶段</h3><p>Acceptor 接收到 Accept 请求时，如果序号大于等于该 Acceptor 承诺的最小序号，那么就发送 Learn 提议给所有的 Learner。当 Learner 发现有大多数的 Acceptor 接收了某个提议，那么该提议的提议值就被 Paxos 选择出来。</p>
-<p><div align="center"> <img src="../pics//bf667594-bb4b-4634-bf9b-0596a45415ba.jpg"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/bf667594-bb4b-4634-bf9b-0596a45415ba.jpg"> </div><br></p>
 <h2 id="约束条件"><a href="#约束条件" class="headerlink" title="约束条件"></a>约束条件</h2><h3 id="1-正确性"><a href="#1-正确性" class="headerlink" title="1. 正确性"></a>1. 正确性</h3><p>指只有一个提议值会生效。</p>
 <p>因为 Paxos 协议要求每个生效的提议被多数 Acceptor 接收，并且 Acceptor 不会接受两个不同的提议，因此可以保证正确性。</p>
 <h3 id="2-可终止性"><a href="#2-可终止性" class="headerlink" title="2. 可终止性"></a>2. 可终止性</h3><p>指最后总会有一个提议生效。</p>
@@ -346,43 +346,43 @@
 <ul>
 <li>下图展示一个分布式系统的最初阶段，此时只有 Follower 没有 Leader。Node A 等待一个随机的竞选超时时间之后，没收到 Leader 发来的心跳包，因此进入竞选阶段。</li>
 </ul>
-<p><div align="center"> <img src="../pics//111521118015898.gif"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/111521118015898.gif"> </div><br></p>
 <ul>
 <li>此时 Node A 发送投票请求给其它所有节点。</li>
 </ul>
-<p><div align="center"> <img src="../pics//111521118445538.gif"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/111521118445538.gif"> </div><br></p>
 <ul>
 <li>其它节点会对请求进行回复，如果超过一半的节点回复了，那么该 Candidate 就会变成 Leader。</li>
 </ul>
-<p><div align="center"> <img src="../pics//111521118483039.gif"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/111521118483039.gif"> </div><br></p>
 <ul>
 <li>之后 Leader 会周期性地发送心跳包给 Follower，Follower 接收到心跳包，会重新开始计时。</li>
 </ul>
-<p><div align="center"> <img src="../pics//111521118640738.gif"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/111521118640738.gif"> </div><br></p>
 <h2 id="多个-Candidate-竞选"><a href="#多个-Candidate-竞选" class="headerlink" title="多个 Candidate 竞选"></a>多个 Candidate 竞选</h2><ul>
 <li>如果有多个 Follower 成为 Candidate，并且所获得票数相同，那么就需要重新开始投票。例如下图中 Node B 和 Node D 都获得两票，需要重新开始投票。</li>
 </ul>
-<p><div align="center"> <img src="../pics//111521119203347.gif"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/111521119203347.gif"> </div><br></p>
 <ul>
 <li>由于每个节点设置的随机竞选超时时间不同，因此下一次再次出现多个 Candidate 并获得同样票数的概率很低。</li>
 </ul>
-<p><div align="center"> <img src="../pics//111521119368714.gif"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/111521119368714.gif"> </div><br></p>
 <h2 id="数据同步"><a href="#数据同步" class="headerlink" title="数据同步"></a>数据同步</h2><ul>
 <li>来自客户端的修改都会被传入 Leader。注意该修改还未被提交，只是写入日志中。</li>
 </ul>
-<p><div align="center"> <img src="../pics//7.gif"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/7.gif"> </div><br></p>
 <ul>
 <li>Leader 会把修改复制到所有 Follower。</li>
 </ul>
-<p><div align="center"> <img src="../pics//9.gif"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/9.gif"> </div><br></p>
 <ul>
 <li>Leader 会等待大多数的 Follower 也进行了修改，然后才将修改提交。</li>
 </ul>
-<p><div align="center"> <img src="../pics//10.gif"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/10.gif"> </div><br></p>
 <ul>
 <li>此时 Leader 会通知的所有 Follower 让它们也提交修改，此时所有节点的值达成一致。</li>
 </ul>
-<p><div align="center"> <img src="../pics//11.gif"> </div><br></p>
+<p><div align="center"> <img src="https://jacquesh.info/pics/11.gif"> </div><br></p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
 <li>倪超. 从 Paxos 到 ZooKeeper : 分布式一致性原理与实践 [M]. 电子工业出版社, 2015.</li>
 <li><a href="https://redis.io/topics/distlock" target="_blank" rel="noopener">Distributed locks with Redis</a></li>
@@ -403,7 +403,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-12-09T05:16:16.040Z" itemprop="dateUpdated">2018-12-09 13:16:16</time>
+    最后更新时间：<time datetime="2018-12-22T18:06:00.907Z" itemprop="dateUpdated">2018-12-23 02:06:00</time>
 </span><br>
 
 

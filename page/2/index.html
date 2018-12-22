@@ -174,7 +174,7 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
-            <article id="post-SpringMVC笔记（5）"
+            <article id="post-SpringMVC笔记（8）"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
@@ -192,7 +192,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/07/12/SpringMVC笔记（5）/">SpringMVC笔记（5）</a>
+      <a class="post-title-link" href="/2018/07/12/SpringMVC笔记（8）/">SpringMVC笔记（8）</a>
     </h3>
   
 
@@ -202,109 +202,14 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        前端控制器1.前端控制器接收请求
-调用doDispatch方法
-12345protected void doDispatch(HttpServletRequest request, HttpServletResponse response) throws Exception &#123;        HttpServletRequest processedRequest = request...
+        整合dao首先在resource文件夹下添加两个文件：数据库配置文件和日志配置文件
+
+数据库配置文件db.properties
+
+1234jdbc.driver=com.mysql.jdbc.Driverjdbc.url=jdbc:mysql://120.25.162.238:3306/mybatis001?characterEncoding=utf-8jdbc.username=rootj...
     
 
-        <a href="/2018/07/12/SpringMVC笔记（5）/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringMVC笔记/">SpringMVC笔记</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-SpringMVC笔记（9）"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018-07-12 22:28:27" datetime="2018-07-12T14:28:27.000Z"  itemprop="datePublished">2018-07-12</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/后端/">后端</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/07/12/SpringMVC笔记（9）/">SpringMVC笔记（9）</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        定义service接口12345public interface ItemsService &#123;    //商品查询列表    List&lt;ItemsCustom&gt; findItemsList(ItemsQueryVo itemsQueryVo) throws Exception;&#125;
-123456789public class ItemsServiceImpl i...
-    
-
-        <a href="/2018/07/12/SpringMVC笔记（9）/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringMVC笔记/">SpringMVC笔记</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-SpringMVC笔记（4）"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018-07-12 22:28:27" datetime="2018-07-12T14:28:27.000Z"  itemprop="datePublished">2018-07-12</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/后端/">后端</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/07/12/SpringMVC笔记（4）/">SpringMVC笔记（4）</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        注解的处理器映射器和适配器版本配置在spring3.1之前使用
-org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping注解映射器。
-在spring3.1之后使用org.springframework.web.servlet.mvc.method.annotation.RequestMappi...
-    
-
-        <a href="/2018/07/12/SpringMVC笔记（4）/" class="post-more waves-effect waves-button">
+        <a href="/2018/07/12/SpringMVC笔记（8）/" class="post-more waves-effect waves-button">
             阅读全文…
         </a>
     </div>
@@ -367,6 +272,55 @@ org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping�
         </li>
     
         <li class="post-list-item fade">
+            <article id="post-SpringMVC笔记（5）"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018-07-12 22:28:27" datetime="2018-07-12T14:28:27.000Z"  itemprop="datePublished">2018-07-12</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/后端/">后端</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2018/07/12/SpringMVC笔记（5）/">SpringMVC笔记（5）</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        前端控制器1.前端控制器接收请求
+调用doDispatch方法
+12345protected void doDispatch(HttpServletRequest request, HttpServletResponse response) throws Exception &#123;        HttpServletRequest processedRequest = request...
+    
+
+        <a href="/2018/07/12/SpringMVC笔记（5）/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringMVC笔记/">SpringMVC笔记</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-SpringMVC笔记（1）"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -407,6 +361,55 @@ Handler处理器：按照HandlerAdapter的要求编写
     
 
         <a href="/2018/07/12/SpringMVC笔记（1）/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringMVC笔记/">SpringMVC笔记</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-SpringMVC笔记（4）"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018-07-12 22:28:27" datetime="2018-07-12T14:28:27.000Z"  itemprop="datePublished">2018-07-12</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/后端/">后端</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2018/07/12/SpringMVC笔记（4）/">SpringMVC笔记（4）</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        注解的处理器映射器和适配器版本配置在spring3.1之前使用
+org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping注解映射器。
+在spring3.1之后使用org.springframework.web.servlet.mvc.method.annotation.RequestMappi...
+    
+
+        <a href="/2018/07/12/SpringMVC笔记（4）/" class="post-more waves-effect waves-button">
             阅读全文…
         </a>
     </div>
